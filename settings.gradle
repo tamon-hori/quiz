@@ -1,0 +1,1 @@
+include ':app', ':ble_communication_lib', ':quiz_lib', ':util', ':util'

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">クイズアプリ</string>
+    <string name="start">はじめる</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_peripheral_or_central">選択してください</string>
+    <string name="peripheral">クイズを開催する</string>
+    <string name="central">クイズに参加する</string>
+    <string name="waiting_member">参加者を待っています…</string>
+    <string name="answer_time_limit">残り時間</string>
+    <string name="question_num">問目</string>
+    <string name="result">結果発表</string>
+    <string name="end">おわる</string>
+    <string name="incorrect">不正解..正解は</string>
+    <string name="correct">正解！</string>
+    <string name="you">あなた</string>
+    <string name="correct_point">問正解</string>
+    <string name="error">エラー！</string>
+    <string name="peripheral_error_message">お使いの端末はクイズを主催できません。</string>
+    <string name="guest_error_message">親機との通信が切断されました。\nスタート画面に戻ります。</string>
+    <string name="host_error_message">子機との通信がすべて切断されました。\nスタート画面に戻ります。</string>
+    <string name="permission_error_message">クイズアプリを使用するには位置情報の権限を許可してください。\nアプリを終了します。</string>
+    <string name="ble_incompatible_message">お使いの端末はBLEに対応していません。\nアプリを終了します。</string>
+    <string name="ok">OK</string>
+</resources>

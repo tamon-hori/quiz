@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <com.example.hori_t.SoundButton
+            android:id="@+id/answerA"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="A"
+            android:textSize="18sp"
+            android:background="@drawable/button_answer_a"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/answerC"
+            app:layout_constraintEnd_toStartOf="@+id/answerB"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.example.hori_t.SoundButton
+            android:id="@+id/answerB"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="B"
+            android:textSize="18sp"
+            android:background="@drawable/button_answer_b"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/answerA"
+            app:layout_constraintTop_toTopOf="@+id/answerA" />
+
+        <com.example.hori_t.SoundButton
+            android:id="@+id/answerC"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="C"
+            android:textSize="18sp"
+            android:background="@drawable/button_answer_c"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/answerD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/answerD" />
+
+        <com.example.hori_t.SoundButton
+            android:id="@+id/answerD"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="D"
+            android:textSize="18sp"
+            android:background="@drawable/button_answer_d"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/answerC"
+            app:layout_constraintTop_toBottomOf="@+id/answerB" />
+
+        <TextView
+            android:id="@+id/quiz_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="30dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/answerA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quiz_number" />
+
+        <TextView
+            android:id="@+id/time_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/answer_time_limit"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/time"
+            app:layout_constraintTop_toTopOf="@+id/quiz_number"
+            tools:text="@string/answer_time_limit" />
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/player2"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player1"
+            app:layout_constraintEnd_toStartOf="@+id/player3"
+            app:layout_constraintStart_toEndOf="@+id/player1"
+            app:layout_constraintTop_toTopOf="@+id/player1" />
+
+        <TextView
+            android:id="@+id/player3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player2"
+            app:layout_constraintEnd_toStartOf="@+id/player4"
+            app:layout_constraintStart_toEndOf="@+id/player2"
+            app:layout_constraintTop_toTopOf="@+id/player2" />
+
+        <TextView
+            android:id="@+id/player4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/player3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/player3"
+            app:layout_constraintTop_toTopOf="@+id/player3" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/time_limit" />
+
+        <TextView
+            android:id="@+id/quiz_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

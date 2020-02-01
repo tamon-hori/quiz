@@ -20,6 +20,19 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    flavorDimensions "version"
+    productFlavors {
+        ojt {
+            dimension "version"
+            applicationIdSuffix ".ojt"
+            versionNameSuffix "-ojt"
+        }
+        dosei {
+            dimension "version"
+            applicationIdSuffix ".dosei"
+            versionNameSuffix "-dosei"
+        }
+    }
 }
 
 dependencies {
@@ -30,8 +43,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation "android.arch.navigation:navigation-fragment:1.0.0-rc01"
-    implementation "android.arch.navigation:navigation-ui:1.0.0-rc01"
+    implementation "android.arch.navigation:navigation-fragment:1.0.0"
+    implementation "android.arch.navigation:navigation-ui:1.0.0"
 
     implementation project(path: ':quiz_lib')
     implementation project(path: ':util')

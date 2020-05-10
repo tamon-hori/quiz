@@ -13,7 +13,7 @@
     android:layout_marginTop="16dp"
     tools:context=".WaitingMemberFragment">
 
-    <com.example.hori_t.SoundButton
+    <com.hori_t.quiz.SoundButton
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

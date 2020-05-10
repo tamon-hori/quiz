@@ -16,7 +16,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp">
 
-        <com.example.hori_t.SoundButton
+        <com.hori_t.quiz.SoundButton
             android:id="@+id/answerA"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toStartOf="@+id/answerB"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.example.hori_t.SoundButton
+        <com.hori_t.quiz.SoundButton
             android:id="@+id/answerB"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -46,7 +46,7 @@
             app:layout_constraintStart_toEndOf="@+id/answerA"
             app:layout_constraintTop_toTopOf="@+id/answerA" />
 
-        <com.example.hori_t.SoundButton
+        <com.hori_t.quiz.SoundButton
             android:id="@+id/answerC"
             android:layout_width="0dp"
             android:layout_height="70dp"
@@ -60,7 +60,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/answerD" />
 
-        <com.example.hori_t.SoundButton
+        <com.hori_t.quiz.SoundButton
             android:id="@+id/answerD"
             android:layout_width="0dp"
             android:layout_height="70dp"
